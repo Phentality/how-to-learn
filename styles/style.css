@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.logo__place_header {
+.logo_place_header {
   height: 32px;
   width: 228px;
   position: absolute;
@@ -82,10 +82,11 @@
 }
 
 .description {
-  margin: 100px 170px 100px;
+  margin: 100px auto 100px;
 }
 
 .two-columns {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,6 +95,7 @@
 }
 
 .two-columns__brief {
+  margin: 0 auto 0;
   display: flex;
   width: 175px;
   color: #2f80ed;
@@ -107,7 +109,6 @@
   min-width: 784px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -138,7 +139,7 @@
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-  margin: 100px auto 20px;
+  margin: 0 auto 20px;
   width: 60%;
 }
 
@@ -199,7 +200,7 @@
   font-size: 120px;
   font-weight: 600;
   width: 648px;
-  margin: 100px auto 70px;
+  margin: 0 auto 70px;
   text-align: center;
   padding-top: 100px;
 }
@@ -230,7 +231,6 @@
   margin: 0;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
 .section-title_theme_dark {
@@ -256,7 +256,7 @@
 }
 
 .table__theme_dark {
-  margin: 0 auto 90;
+  margin: 0 auto 90px;
 }
 
 .table__cell_theme_dark {
@@ -277,19 +277,21 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  z-index: 2;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   width: 877px;
   height: 877px;
   top: 0px;
   right: -210px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .footer {
+  display: flex;
   background-color: #1f1f1f;
   min-height: 350px;
   padding: 0px;
@@ -297,11 +299,12 @@
 }
 
 .footer__columns {
+  width: 90%;
   padding-top: 60px;
   margin: 0px auto 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__column_content_copyright {
@@ -351,10 +354,7 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
-}
-
-.footer__column-links:last-child {
-  margin: 0 0 16px;
+  margin-bottom: 16px;
 }
 
 .footer__column-link {
